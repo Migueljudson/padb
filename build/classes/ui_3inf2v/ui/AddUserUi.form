@@ -4,6 +4,8 @@
   <NonVisualComponents>
     <Component class="javax.swing.ButtonGroup" name="buttonGroup1">
     </Component>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup2">
+    </Component>
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
@@ -59,7 +61,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace pref="100" max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                               <Component id="jTextField1" min="-2" pref="270" max="-2" attributes="0"/>
                               <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -69,19 +71,21 @@
                                       <Component id="jRadioButton1" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="jCheckBox1" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jCheckBox2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jRadioButton2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" attributes="0">
-                                          <Component id="jRadioButton2" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jRadioButton3" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jCheckBox2" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jCheckBox3" min="-2" max="-2" attributes="0"/>
-                                      </Group>
+                                      <Component id="jRadioButton3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jCheckBox3" min="-2" max="-2" attributes="0"/>
                                   </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jComboBox1" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
@@ -92,6 +96,11 @@
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="134" max="-2" attributes="0"/>
+                  <Component id="jButton1" min="-2" pref="182" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -120,7 +129,14 @@
                       <Component id="jCheckBox2" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jCheckBox3" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="40" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="jButton1" min="-2" pref="53" max="-2" attributes="0"/>
+                  <EmptySpace pref="55" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -149,6 +165,9 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton1">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Masculino"/>
           </Properties>
           <Events>
@@ -157,12 +176,21 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton2">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Feminino"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton3">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Outro"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Default Cursor"/>
+            </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel4">
@@ -172,7 +200,11 @@
         </Component>
         <Component class="javax.swing.JCheckBox" name="jCheckBox1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jCheckBox1"/>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup2"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="futeboll"/>
+            <Property name="actionCommand" type="java.lang.String" value="Futeboll"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox1ActionPerformed"/>
@@ -180,13 +212,47 @@
         </Component>
         <Component class="javax.swing.JCheckBox" name="jCheckBox2">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jCheckBox2"/>
+            <Property name="text" type="java.lang.String" value="Programa&#xe7;&#xe3;o"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JCheckBox" name="jCheckBox3">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jCheckBox3"/>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup2"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Festas"/>
           </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="jComboBox1">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="4">
+                <StringItem index="0" value="Macau"/>
+                <StringItem index="1" value="Natal"/>
+                <StringItem index="2" value="Pendencias"/>
+                <StringItem index="3" value=" "/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel5">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cidades:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="CADASTRAR"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>

@@ -3,6 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package ui_3inf2v.ui;
+
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author 20221074010012
@@ -13,7 +16,7 @@ public class TriangulosUI extends javax.swing.JFrame {
      * Creates new form TriangulosUI
      */
     public TriangulosUI() {
-        initComponents();
+        initComponents();    
     }
 
     /**
@@ -160,6 +163,16 @@ public class TriangulosUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void calcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcActionPerformed
+        if(jTextFiel1.getText(). eguals("")
+               || 
+        
+        JOptionPane.showMessageDialog(
+        null,
+        "preecha todos os lados!",
+        "ERRO",
+        JOptionPane.ERROR_MESSAGE
+        );
+        
         double a = Double.parseDouble(A.getText());
         double b = Double.parseDouble(B.getText());
         double c = Double.parseDouble(C.getText());
