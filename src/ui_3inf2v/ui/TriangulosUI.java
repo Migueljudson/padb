@@ -163,8 +163,7 @@ public class TriangulosUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void calcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcActionPerformed
-        if(jTextFiel1.getText(). eguals("")
-               || 
+        if 
         
         JOptionPane.showMessageDialog(
         null,
